@@ -1,0 +1,99 @@
+:root {
+  box-sizing: border-box;
+}
+body {
+  margin: 20px;
+  padding: 0;
+  background-color: black;
+}
+
+.container {
+  width: 90vw;
+  height: 90vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+h1{
+  text-align: center;
+  font-family: 'Sacramento';font-size:50px;
+  color:white;
+  line-height: 0%;
+}
+
+#images {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+/*
+img {
+  margin: 0;
+}
+*/
+/*#first {
+  width: 360px;
+  height: 640px;
+  position: absolute;
+  z-index: -1;
+}
+
+#second {
+  position: absolute;
+  width: 110px;
+  height: 195px;
+  z-index: 1;
+}
+
+#third {
+  position: absolute;
+  width: 32px;
+  height: 57px;
+  z-index: 2;
+}*/
+.hidden{
+  display:none;
+}
+
+
+.slider-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.slider:hover{
+  opacity: 1;
+}
+input[type="range"] {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 50%; /* Full-width */
+  height: 20px;
+  border-radius: 10px;
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  background:#455589;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 32px;
+  height: 32px;
+  border: 0;
+  background: #d3d3d3;
+  cursor: pointer;
+}
